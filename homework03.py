@@ -259,11 +259,11 @@ for epoch in possible_dict["epoch"]:
 
                     data_dict_list.append(data_dict)
 
-                    print(f"train_losses: epoch: {epoch} learningrate: {learning_rate} optimizier: {optimizer_str} batch_size:  {batch_size} layer_data: {layer_data} test_losses: {train_losses[-1].numpy()} \n")
+                    print(f"train_losses: epoch: {epoch} learningrate: {learning_rate} optimizier: {optimizer_str} batch_size:  {batch_size} layer_data: {layer_data} train_losses: {train_losses[-1].numpy()} \n")
 
                     print(f"test_losses: epoch: {epoch} learningrate: {learning_rate} optimizier: {optimizer_str} batch_size:  {batch_size} layer_data: {layer_data} test_losses: {test_losses[-1].numpy()}\n")
 
-                    print(f"test_accuracies: epoch: {epoch} learningrate: {learning_rate} optimizier: {optimizer_str} batch_size:  {batch_size} layer_data: {layer_data} test_losses: {test_accuracies[-1].numpy()}\n\n")
+                    print(f"test_accuracies: epoch: {epoch} learningrate: {learning_rate} optimizier: {optimizer_str} batch_size:  {batch_size} layer_data: {layer_data} test_accuracy: {test_accuracies[-1].numpy()}\n\n")
 
 # find best attribute value for criteria
 parameters = ["epoch", "learning_rate", "optimizer", "batch_size", "layer_data"]
